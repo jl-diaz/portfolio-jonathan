@@ -55,7 +55,6 @@ const Skills = () => {
         <div className="md:w-1/2 space-y-8">
           <div>
             <h2 className="text-3xl md:text-5xl font-bold mb-4">Contacto</h2>
-            <p className="text-gray-400">¿Tienes un proyecto en mente? Hablemos.</p>
           </div>
           
           <div className="space-y-6">
