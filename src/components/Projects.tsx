@@ -6,7 +6,7 @@ const projects = [
   {
     title: 'CokieCollege',
     description: 'Plataforma educativa en desarrollo. Integra múltiples tecnologías para ofrecer una experiencia amigable y eficiente.',
-    tech: ['Java', 'React', 'Node.js', 'SQL'],
+    tech: ['React Native', 'Node.js', 'PostgreSQL'],
     github: 'https://github.com/jl-diaz/Cokie_college.git',
     demo: '#',
     video: '/VideoCokieCollege.mp4',
@@ -25,7 +25,7 @@ const projects = [
   {
     title: 'Espasmos Sollozo',
     description: 'Sitio web informativo sobre espasmos del sollozo, recursos para padres y especialistas.',
-    tech: ['HTML', 'CSS', 'Netlify'],
+    tech: ['HTML', 'CSS', 'Lenis'],
     github: 'https://github.com/jl-diaz/EspasmosSollozo.git',
     demo: 'https://espasmosdelsollozo.netlify.app/',
     logo: '/logoEspasmosSollozo.png',
@@ -33,7 +33,7 @@ const projects = [
   {
     title: 'Lessa Learns',
     description: 'Sitio web informativo para el aprendizaje de Lenguaje de Señas Salvadoreño.',
-    tech: ['HTML', 'CSS', 'JavaScript', 'Vercel'],
+    tech: ['HTML', 'CSS', 'JavaScript'],
     github: 'https://github.com/jl-diaz/Lessa-Learns.git',
     demo: 'https://lessa-learns.vercel.app/',
     logo: '/logoLessaLearns.png',
@@ -41,7 +41,7 @@ const projects = [
   {
     title: 'Bloomrise',
     description: 'Sitio web informativo sobre la depresion postparto, recursos para meditación y bienestar.',
-    tech: ['HTML', 'CSS', 'UI/UX'],
+    tech: ['HTML', 'CSS', 'GSAP'],
     github: 'https://github.com/jl-diaz/Bloomrise.git',
     demo: '#',
     status: 'En desarrollo',
