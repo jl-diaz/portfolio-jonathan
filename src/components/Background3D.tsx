@@ -86,7 +86,7 @@ const Background3D = () => {
         <Environment preset="studio" />
         
         {/* Placed at different Y coordinates to appear as you scroll */}
-        <ChromeShape position={[3, 1, -2]} scale={1.2} geometry={geometries[0]} rotationSpeed={{ x: 0.2, y: 0.3 }} />
+        <ChromeShape position={[3, 3, -2]} scale={1.2} geometry={geometries[0]} rotationSpeed={{ x: 0.2, y: 0.3 }} />
         <ChromeShape position={[-4, -8, -4]} scale={1.5} geometry={geometries[1]} rotationSpeed={{ x: 0.1, y: 0.4 }} />
         <ChromeShape position={[4, -18, -3]} scale={1.3} geometry={geometries[2]} rotationSpeed={{ x: 0.3, y: 0.2 }} />
         <ChromeShape position={[-3, -26, -5]} scale={1.4} geometry={geometries[3]} rotationSpeed={{ x: 0.2, y: 0.5 }} />

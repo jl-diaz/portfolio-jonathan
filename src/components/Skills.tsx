@@ -6,8 +6,17 @@ const Skills = () => {
   const sectionRef = useRef<HTMLElement>(null);
   
   const techStack = [
-    'Java', 'C#', 'Python', 'JavaScript', 'Node.js', 
-    'React Native', 'SQL', 'Arduino', 'Packet Tracer'
+    { name: 'Java', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg' },
+    { name: 'C#', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg' },
+    { name: 'Python', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg' },
+    { name: 'HTML', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg' },
+    { name: 'CSS', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg' },
+    { name: 'JavaScript', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg' },
+    { name: 'Node.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg' },
+    { name: 'React Native', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg' },
+    { name: 'SQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg' },
+    { name: 'MongoDB', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg' },
+    { name: 'Arduino', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/arduino/arduino-original.svg' }
   ];
 
   useEffect(() => {
@@ -43,10 +52,11 @@ const Skills = () => {
           <div className="flex flex-wrap gap-4">
             {techStack.map((tech) => (
               <div 
-                key={tech} 
-                className="skill-item flex items-center justify-center px-6 py-3 bg-secondary/30 rounded-xl border border-gray-800 text-gray-200 font-medium hover:border-accent hover:text-accent transition-all duration-300"
+                key={tech.name} 
+                className="skill-item flex flex-col items-center justify-center p-4 bg-secondary/30 rounded-xl border border-gray-800 text-gray-400 hover:border-blue-500 hover:text-blue-500 transition-all duration-300 gap-3 min-w-[100px]"
               >
-                {tech}
+                <img src={tech.icon} alt={tech.name} className="w-12 h-12 object-contain group-hover:scale-110 transition-transform duration-300 drop-shadow-md" />
+                <span className="text-sm font-medium">{tech.name}</span>
               </div>
             ))}
           </div>
